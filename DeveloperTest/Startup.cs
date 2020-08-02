@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using DeveloperTest.Business;
 using DeveloperTest.Business.Interfaces;
 using DeveloperTest.Database;
+using AutoMapper;
 
 namespace DeveloperTest
 {
@@ -22,6 +23,7 @@ namespace DeveloperTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
 
             services.AddDbContext<ApplicationDbContext>(options =>
