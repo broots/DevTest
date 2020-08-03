@@ -1,3 +1,24 @@
+Submitted be James Brown from Ascent People (Bryn Evans)
+
+Added some tests to solution. Should run to spec
+Implemented repository pattern so moving forward new "entites" with CRUD functionality can be implemented without code duplication
+Job Service can be refactored to use this approach
+
+To run
+
+C#
+
+    Setup requires ms localdb
+    Open and build solution (in DeveloperTest)
+    Run Update-Database and run solution to start api
+
+Angular
+
+    Angular project located in UI folder
+    Install npm
+    ng serve (runs on http://localhost:4200)
+
+
 # Developer Test
 
 
