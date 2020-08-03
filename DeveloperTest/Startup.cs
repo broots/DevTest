@@ -8,6 +8,7 @@ using DeveloperTest.Business;
 using DeveloperTest.Business.Interfaces;
 using DeveloperTest.Database;
 using AutoMapper;
+using DeveloperTest.Database.Models;
 
 namespace DeveloperTest
 {
@@ -30,6 +31,7 @@ namespace DeveloperTest
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IJobService, JobService>();
+            services.AddTransient<IRepositoryService<Customer>, CustomerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,6 +8,6 @@ namespace DeveloperTest.Business.Interfaces
 
         JobModel GetJob(int jobId);
 
-        JobModel CreateJob(BaseJobModel model);
+        JobModel CreateJob(JobModel model);
     }
 }
